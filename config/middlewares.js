@@ -5,7 +5,7 @@ module.exports = ({env}) => [
       contentSecurityPolicy: {
         directives: {
           'default-src': ["'self'"],
-          'img-src': ["'self'", 'data:', 'blob:', '<YOUR_SUPABASE_DOMAIN>'],
+          'script-src': ["'self'"],
         },
       },
     },
