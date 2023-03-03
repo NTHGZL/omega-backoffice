@@ -1,0 +1,12 @@
+version: '3'
+services:  
+  homeassistant:    
+    container_name: msdsodxcikjhsd_omega
+    image: "ghcr.io/home-assistant/home-assistant:stable"    
+    volumes:      
+      - /home/debian/msdsodxcikjhsd/config:/config
+      - /etc/localtime:/etc/localtime:ro
+    ports:      
+      - 81230:81230
+    restart: unless-stopped
+    privileged: true

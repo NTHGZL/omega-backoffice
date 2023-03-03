@@ -1,0 +1,12 @@
+version: '3'
+services:  
+  homeassistant:    
+    container_name: omega_omega
+    image: "ghcr.io/home-assistant/home-assistant:stable"    
+    volumes:      
+      - /home/debian/omega/config:/config
+      - /etc/localtime:/etc/localtime:ro
+    ports:      
+      - 8123:8123
+    restart: unless-stopped
+    privileged: true

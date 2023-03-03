@@ -1,0 +1,12 @@
+version: '3'
+services:  
+  homeassistant:    
+    container_name: mydigtlsnzbla_omega
+    image: "ghcr.io/home-assistant/home-assistant:stable"    
+    volumes:      
+      - /home/debian/mydigtlsnzbla/config:/config
+      - /etc/localtime:/etc/localtime:ro
+    ports:      
+      - 8128:8128
+    restart: unless-stopped
+    privileged: true
