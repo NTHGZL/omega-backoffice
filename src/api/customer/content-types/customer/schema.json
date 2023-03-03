@@ -40,6 +40,14 @@
       "repeatable": false,
       "component": "adress.contact",
       "required": true
+    },
+    "logo": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": false
     }
   }
 }
