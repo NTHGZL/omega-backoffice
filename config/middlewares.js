@@ -6,7 +6,8 @@ module.exports = ({env}) => [
         directives: {
           'default-src': ["'self'"],
           'script-src': ["'self'"],
-          'img-src': ["'self'"],
+          'img-src': ["'self'", 'data:', 'blob:', 'http://omega-backoffice.nathangonzalez.fr'],
+          'media-src': ["'self'", 'data:', 'blob:', 'http://omega-backoffice.nathangonzalez.fr']
         },
       },
     },
