@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_adress_adresses",
+  "info": {
+    "displayName": "adress"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "postalcode": {
+      "type": "string",
+      "required": true
+    },
+    "city": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

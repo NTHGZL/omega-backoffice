@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "customers",
+  "info": {
+    "singularName": "customer",
+    "pluralName": "customers",
+    "displayName": "Customer",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "minLength": 3,
+      "required": true
+    },
+    "SIREN": {
+      "type": "string",
+      "required": true
+    },
+    "SIRET": {
+      "type": "string"
+    },
+    "adress": {
+      "displayName": "adress",
+      "type": "component",
+      "repeatable": false,
+      "component": "adress.adress",
+      "required": true
+    },
+    "url": {
+      "type": "string"
+    },
+    "contact": {
+      "displayName": "contact",
+      "type": "component",
+      "repeatable": false,
+      "component": "adress.contact",
+      "required": true
+    }
+  }
+}
