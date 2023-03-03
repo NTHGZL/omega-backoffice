@@ -6,6 +6,7 @@ module.exports = ({env}) => [
         directives: {
           'default-src': ["'self'"],
           'script-src': ["'self'"],
+          'img-src': ["'self'"],
         },
       },
     },
