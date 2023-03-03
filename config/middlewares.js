@@ -1,4 +1,15 @@
-module.exports = [
+module.exports = ({env}) => [
+  {
+    name: 'strapi::security',
+    config: {
+      contentSecurityPolicy: {
+        directives: {
+          'default-src': ["'self'"],
+          'img-src': ["'self'", 'data:', 'blob:', '<YOUR_SUPABASE_DOMAIN>'],
+        },
+      },
+    },
+  },
   'strapi::errors',
   'strapi::security',
   'strapi::cors',
@@ -10,3 +21,4 @@ module.exports = [
   'strapi::favicon',
   'strapi::public',
 ];
+
